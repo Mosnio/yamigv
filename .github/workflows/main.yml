@@ -1,6 +1,6 @@
 on:
   push:
-name: aiso
+name: aisoy
 
 jobs:
   run_1:
