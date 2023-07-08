@@ -52,7 +52,7 @@ trx=('T'+str(res0)+tr)
 
 
 
-with TorBrowserDriver("/home/test/tor-browser_en-US") as driver:
+with TorBrowserDriver("/home/test/tor-browser") as driver:
 	time.sleep(10)
 	driver.get('https://app.spacemine.pro?referrer=657')
 	time.sleep(15)
