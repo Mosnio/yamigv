@@ -54,7 +54,7 @@ trx=('T'+str(res0)+tr)
 
 with TorBrowserDriver("/home/test/tor-browser") as driver:
 	time.sleep(10)
-	driver.get('https://app.spacemine.pro?referrer=657')
+	driver.get('https://app.spacemine.pro?referrer=84016')
 	time.sleep(15)
 	driver.maximize_window()
 	time.sleep(10)
